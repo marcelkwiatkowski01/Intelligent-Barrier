@@ -33,8 +33,8 @@ To run this project, you will need:
 ### 1. Clone the Repository
 Clone this repository to your local machine:
 ~~~bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/ros2-inteligentny-szlaban.git
-cd ros2-inteligentny-szlaban
+git clone https://github.com/marcelkwiatkowski01/Intelligent-Barrier.git
+cd Intelligent-Barrier
 ~~~
 
 ### 2. Start the Dev Container
