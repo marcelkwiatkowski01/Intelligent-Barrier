@@ -104,3 +104,6 @@ In Terminal 2, simply type the letter `o` (case-insensitive) and press **Enter**
 1. The driver will send a Service request to the Gate.
 2. The Gate will process the request, change its status to `Otwarty`, and hold the gate open.
 3. After exactly 3 seconds, an internal timer within the Gate node will automatically close it, restoring the `Zamkniety` status.
+
+
+Project made by Kwiatkowski Marcel
