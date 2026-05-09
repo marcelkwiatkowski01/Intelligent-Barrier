@@ -33,5 +33,45 @@ To run this project, you will need:
 ### 1. Clone the Repository
 Clone this repository to your local machine:
 ```bash
-git clone [https://github.com/marcelkwiatkowski01/Intelligent-Barrier.git](https://github.com/marcelkwiatkowski01/Intelligent-Barrier.git)
 
+### 2. Start the Dev Container
+1. Open the cloned folder in Visual Studio Code.
+2. Press `F1` (or `Ctrl+Shift+P`) to open the command palette.
+3. Type and select: **Dev Containers: Reopen in Container**.
+4. VS Code will now build the Docker image and start the ROS2 container. (This may take a few minutes the first time).
+
+### 3. Build the Workspace
+Once inside the container (indicated by the terminal path `/workspace`), build the ROS2 package:
+```bash
+colcon build
+source install/setup.bash
+```
+
+---
+
+## 🎮 How to Run
+
+Because the project features an interactive user interface (the driver's keyboard input), it is designed to run in a **Dual-Terminal Setup**.
+
+### Terminal 1: Start the Gate Server
+In your first VS Code terminal, launch the Gate Node using the provided launch file:
+```bash
+ros2 launch projekt_szlaban szlaban.launch.py
+```
+*Expected behavior: The terminal will begin logging the gate's closed status every second.*
+
+### Terminal 2: Start the Driver Client
+Open a **new terminal** inside VS Code (click the `+` icon). Source the environment and run the driver node directly:
+```bash
+source install/setup.bash
+ros2 run projekt_szlaban kierowca
+```
+*Expected behavior: You will see an interactive prompt. The terminal will seamlessly display the gate's broadcasts while waiting for your input.*
+
+### Interaction
+In Terminal 2, simply type the letter `o` (case-insensitive) and press **Enter**.
+1. The driver will send a Service request to the Gate.
+2. The Gate will process the request, change its status to `Otwarty`, and hold the gate open.
+3. After exactly 3 seconds, an internal timer within the Gate node will automatically close it, restoring the `Zamkniety` status.
+
+git clone [https://github.com/marcelkwiatkowski01/Intelligent-Barrier.git](https://github.com/marcelkwiatkowski01/Intelligent-Barrier.git)
