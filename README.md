@@ -34,4 +34,4 @@ To run this project, you will need:
 Clone this repository to your local machine:
 ```bash
 git clone [https://github.com/marcelkwiatkowski01/Intelligent-Barrier.git](https://github.com/marcelkwiatkowski01/Intelligent-Barrier.git)
-cd Intelligent Barrier
+
