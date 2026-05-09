@@ -25,6 +25,7 @@ To run this project, you will need:
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running.
 * [Visual Studio Code](https://code.visualstudio.com/).
 * The **Dev Containers** extension installed in VS Code.
+* The **[Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)** installed in VS Code.
 
 ---
 
@@ -76,4 +77,3 @@ In Terminal 2, simply type the letter `o` (case-insensitive) and press **Enter**
 1. The driver will send a Service request to the Gate.
 2. The Gate will process the request, change its status to `Otwarty`, and hold the gate open.
 3. After exactly 3 seconds, an internal timer within the Gate node will automatically close it, restoring the `Zamkniety` status.
-git clone [https://github.com/marcelkwiatkowski01/Intelligent-Barrier.git](https://github.com/marcelkwiatkowski01/Intelligent-Barrier.git)
