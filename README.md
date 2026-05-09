@@ -15,6 +15,34 @@ The project implements two distinct nodes communicating in real-time:
 
 ---
 
+## 📂 File Structure & Code Explanation
+
+Here is a breakdown of the core files in this repository and their responsibilities:
+
+*   **`projekt_szlaban/szlaban_node.py` (Gate Server Node)**
+    *   Uses `create_publisher` to broadcast the gate's state every 1.0 second.
+    *   Uses `create_service` to listen for trigger requests. Once triggered, it changes the state to `Otwarty` (Open) and initiates a 3-second timer (`create_timer`).
+    *   When the timer expires, a callback automatically reverts the state to `Zamkniety` (Closed).
+
+*   **`projekt_szlaban/kierowca_node.py` (Driver Client Node)**
+    *   Uses `create_subscription` to listen to the gate's topic and log the physical state to the terminal.
+    *   Implements a background thread (`threading.Thread`) to continuously read standard keyboard input (`stdin`). This ensures the ROS2 executor (`rclpy.spin`) is not blocked.
+    *   When the user types `o`, it uses `create_client` to send an asynchronous service request to the gate.
+
+*   **`launch/szlaban.launch.py` (Launch Configuration)**
+    *   Automates the startup of the gate node. 
+    *   Demonstrates ROS2 node renaming capabilities (remaps the node's name to `moj_szlaban` dynamically at runtime).
+
+*   **`setup.py` (Build Configuration)**
+    *   The configuration file for the `colcon` build system.
+    *   Contains the `console_scripts` entry points, registering `szlaban` and `kierowca` as executable commands.
+    *   Includes the `data_files` mapping, which ensures the `launch` directory is properly copied to the `install/share` path during the build process.
+
+*   **`.devcontainer/` (Environment Config)**
+    *   Contains the `Dockerfile` and `devcontainer.json` defining the isolated ROS2 Humble Linux environment.
+
+---
+
 ## 🐳 Infrastructure as Code (Docker & DevContainers)
 To ensure **100% reproducibility** and eliminate the "it works on my machine" problem, this project is entirely containerized. You do **not** need to install ROS2 or Ubuntu on your local machine.
 
@@ -24,7 +52,6 @@ The repository includes a `.devcontainer` configuration, which utilizes Docker t
 To run this project, you will need:
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running.
 * [Visual Studio Code](https://code.visualstudio.com/).
-* The **Dev Containers** extension installed in VS Code.
 * The **[Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)** installed in VS Code.
 
 ---
