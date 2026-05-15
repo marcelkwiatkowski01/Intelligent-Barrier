@@ -118,6 +118,6 @@ In Terminal 2, simply type the letter `o` (case-insensitive) and press **Enter**
 3. After exactly 3 seconds, an internal timer within the Gate node will automatically close it, restoring the `Zamkniety` status.
 
 ## <a name="results"></a>Results:
-<img src="https://github.com/user-attachments/assets/7568582d-1143-41c1-840e-74400e470817" width="100%">
+[!Communication:](https://github.com/marcelkwiatkowski01/Intelligent-Barrier/issues/1#issue-4450445388)
 
 Project made by Kwiatkowski Marcel
