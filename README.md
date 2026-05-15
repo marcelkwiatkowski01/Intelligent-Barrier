@@ -9,10 +9,10 @@ An academic project demonstrating advanced node-to-node communication within the
 2. [Implemented ROS2 Features](#features)
 3. [File Structure and Code Explanation](#structure)
 4. [Infrastructure as Code (Docker & DevContainers)](#-infrastructure-as-code-docker--devcontainers)
-5. [Prerequisites](#-prerequisites)
-6. [Installation and Setup Guide](#-installation-&-setup-guide)
+5. [Prerequisites](#prerequisites)
+6. [Installation and Setup Guide](#setup)
 7. [How to Run](#-how-to-run)
-8. [Results](#-results)
+8. [Results](#results)
 
 ## 📌 Project Overview
 The project implements two distinct nodes communicating in real-time:
@@ -60,7 +60,7 @@ To ensure **100% reproducibility** and eliminate the "it works on my machine" pr
 
 The repository includes a `.devcontainer` configuration, which utilizes Docker to automatically build a complete Linux environment with **ROS2 Humble** pre-installed, along with all necessary build tools (like `colcon`).
 
-### Prerequisites
+### <a name="prerequisites"></a>📋 Prerequisites
 To run this project, you will need:
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running.
 * [Visual Studio Code](https://code.visualstudio.com/).
@@ -68,7 +68,7 @@ To run this project, you will need:
 
 ---
 
-## 🚀 Installation & Setup Guide
+## <a name="setup"></a>🚀 Installation and Setup Guide
 
 ### 1. Clone the Repository
 Clone this repository to your local machine:
@@ -117,7 +117,7 @@ In Terminal 2, simply type the letter `o` (case-insensitive) and press **Enter**
 2. The Gate will process the request, change its status to `Otwarty`, and hold the gate open.
 3. After exactly 3 seconds, an internal timer within the Gate node will automatically close it, restoring the `Zamkniety` status.
 
-## Results:
+## <a name="results"></a>Results:
 
 
 Project made by Kwiatkowski Marcel
