@@ -1,6 +1,18 @@
 # 🚧 Smart Toll Gate - ROS2 Humble Project
+### Author: Marcel Kwiatkowski
+**Project:** Intelligent Barrier in ROS2
 
 An academic project demonstrating advanced node-to-node communication within the **ROS2 (Robot Operating System 2)** environment. The system simulates a real-world scenario of an automated toll gate and its interaction with an approaching vehicle (driver).
+
+## 📑 Table of Contents
+1. [Project Overwiev](#-project-overwiev)
+2. [Implemented ROS2 Features](#-Implemented-ROS2-Features)
+3. [File Structure & Code Explanation](#-File-Structure-&-Code-Explanation)
+4. [Infrastructure as Code (Docker & DevContainers)](#-Infrastructure-as-Code-(Docker-&-DevContainers))
+5. [Prerequisites](#-Prerequisites)
+6. [Installation & Setup Guide](#-Installation-&-Setup-Guide)
+7. [How to Run](#-How-to-Run)
+8. [Results](#-results)
 
 ## 📌 Project Overview
 The project implements two distinct nodes communicating in real-time:
@@ -104,6 +116,8 @@ In Terminal 2, simply type the letter `o` (case-insensitive) and press **Enter**
 1. The driver will send a Service request to the Gate.
 2. The Gate will process the request, change its status to `Otwarty`, and hold the gate open.
 3. After exactly 3 seconds, an internal timer within the Gate node will automatically close it, restoring the `Zamkniety` status.
+
+## Results:
 
 
 Project made by Kwiatkowski Marcel
