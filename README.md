@@ -120,4 +120,6 @@ In Terminal 2, simply type the letter `o` (case-insensitive) and press **Enter**
 ## <a name="results"></a>Results:
 [!Communication:](https://github.com/marcelkwiatkowski01/Intelligent-Barrier/issues/1#issue-4450445388)
 
+[https://raw.githubusercontent.com/marcelkwiatkowski01/Intelligent-Barrier/results/results1.png](https://raw.githubusercontent.com/marcelkwiatkowski01/Intelligent-Barrier/results/results1.png)
+
 Project made by Kwiatkowski Marcel
