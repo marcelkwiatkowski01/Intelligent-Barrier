@@ -118,8 +118,11 @@ In Terminal 2, simply type the letter `o` (case-insensitive) and press **Enter**
 3. After exactly 3 seconds, an internal timer within the Gate node will automatically close it, restoring the `Zamkniety` status.
 
 ## <a name="results"></a>Results:
+
 Below is a demonstration of the communication between both terminals:
 [!Communication-ROS2:](https://github.com/marcelkwiatkowski01/Intelligent-Barrier/issues/1#issue-4450445388)
+
+
 Below is a demonstration of the system successfully opening the barrier:
 [!Opening the barrier-ROS2:](https://github.com/marcelkwiatkowski01/Intelligent-Barrier/issues/2#issue-4450511974)
 
