@@ -5,14 +5,14 @@
 An academic project demonstrating advanced node-to-node communication within the **ROS2 (Robot Operating System 2)** environment. The system simulates a real-world scenario of an automated toll gate and its interaction with an approaching vehicle (driver).
 
 ## 📑 Table of Contents
-1. [Project Overview](#project-overview)
-2. [Implemented ROS2 Features](#implemented-ros2-features)
-3. [File Structure and Code Explanation](#file-structure-&-code-explanation)
-4. [Infrastructure as Code (Docker & DevContainers)](#infrastructure-as-code-docker--devcontainers)
-5. [Prerequisites](#prerequisites)
-6. [Installation and Setup Guide](#installation-&-setup-guide)
-7. [How to Run](#how-to-run)
-8. [Results](#results)
+1. [Project Overview](#-project-overview)
+2. [Implemented ROS2 Features](#-implemented-ros2-features)
+3. [File Structure and Code Explanation](#-file-structure-&-code-explanation)
+4. [Infrastructure as Code (Docker & DevContainers)](#-infrastructure-as-code-docker--devcontainers)
+5. [Prerequisites](#-prerequisites)
+6. [Installation and Setup Guide](#-installation-&-setup-guide)
+7. [How to Run](#-how-to-run)
+8. [Results](#-results)
 
 ## 📌 Project Overview
 The project implements two distinct nodes communicating in real-time:
