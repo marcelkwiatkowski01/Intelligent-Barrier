@@ -6,8 +6,8 @@ An academic project demonstrating advanced node-to-node communication within the
 
 ## 📑 Table of Contents
 1. [Project Overview](#-project-overview)
-2. [Implemented ROS2 Features](#-implemented-ros2-features)
-3. [File Structure and Code Explanation](#-file-structure-&-code-explanation)
+2. [Implemented ROS2 Features](#features)
+3. [File Structure and Code Explanation](#structure)
 4. [Infrastructure as Code (Docker & DevContainers)](#-infrastructure-as-code-docker--devcontainers)
 5. [Prerequisites](#-prerequisites)
 6. [Installation and Setup Guide](#-installation-&-setup-guide)
@@ -19,7 +19,7 @@ The project implements two distinct nodes communicating in real-time:
 1. **Gate Server (`szlaban_node`)**: Operates in the background, continuously broadcasting its status and awaiting service requests to open.
 2. **Driver Client (`kierowca_node`)**: An interactive node that listens to the gate's broadcasts and allows the user to trigger the opening mechanism via keyboard input.
 
-### Implemented ROS2 Features
+### <a name="features"></a>Implemented ROS2 Features
 * **Topics (Publisher/Subscriber)**: The gate continuously publishes its current physical state (`Zamkniety` [Closed] or `Otwarty` [Open]) on the `status_szlabanu` topic using standard `std_msgs/String` messages. The driver node subscribes to this topic to provide real-time updates to the user.
 * **Services (Client/Server)**: The gate hosts an `otworz_szlaban` service (using the standard `std_srvs/Trigger` type). The driver acts as a service client, sending a trigger signal to open the gate.
 * **Launch Files**: The server-side environment is initialized using a python-based launch file (`szlaban.launch.py`), allowing for node renaming and background execution.
@@ -27,7 +27,7 @@ The project implements two distinct nodes communicating in real-time:
 
 ---
 
-## 📂 File Structure & Code Explanation
+## <a name="structure"></a>📂 File Structure and Code Explanation
 
 Here is a breakdown of the core files in this repository and their responsibilities:
 
