@@ -7,10 +7,10 @@ An academic project demonstrating advanced node-to-node communication within the
 ## 📑 Table of Contents
 1. [Project Overwiev](#-project-overwiev)
 2. [Implemented ROS2 Features](#-Implemented-ROS2-Features)
-3. [File Structure & Code Explanation](#-File-Structure-&-Code-Explanation)
+3. [File Structure and Code Explanation](#-File-Structure-and-Code-Explanation)
 4. [Infrastructure as Code (Docker & DevContainers)](#-Infrastructure-as-Code-(Docker-&-DevContainers))
 5. [Prerequisites](#-Prerequisites)
-6. [Installation & Setup Guide](#-Installation-&-Setup-Guide)
+6. [Installation and Setup Guide](#-Installation-and-Setup-Guide)
 7. [How to Run](#-How-to-Run)
 8. [Results](#-results)
 
@@ -27,7 +27,7 @@ The project implements two distinct nodes communicating in real-time:
 
 ---
 
-## 📂 File Structure & Code Explanation
+## 📂 File Structure and Code Explanation
 
 Here is a breakdown of the core files in this repository and their responsibilities:
 
@@ -68,7 +68,7 @@ To run this project, you will need:
 
 ---
 
-## 🚀 Installation & Setup Guide
+## 🚀 Installation and Setup Guide
 
 ### 1. Clone the Repository
 Clone this repository to your local machine:
